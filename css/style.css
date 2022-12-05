@@ -1,0 +1,165 @@
+@font-face {
+	font-family: 'Oranienbaum';
+	src: local('./fonts/Oranienbaum.ttf'),
+		url('./fonts/Oranienbaum.ttf') format('ttf');
+}
+
+.header {
+  font-family: Oranienbaum;
+  font-size: 0.9rem;
+  color: white;
+  position: relative;
+}
+
+.header__background {
+  width: 100%;
+}
+
+.header_line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 40px;
+  position: absolute;
+  top: 0;
+}
+
+.header_menu > a, .icon_img, .number, .icons_link > a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+.number:hover {
+  color: #cdb380;
+}
+
+.header_item:hover {
+  color: #cdb380;
+}
+
+.header_menu {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  align-items: center;
+}
+
+.header_link {
+  display: flex;
+  width: 45%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.icons_link {
+  display: flex;
+  margin-left: 50%;
+}
+
+.icon_img {
+  width: 25px;
+  margin-left: 5px;
+}
+
+.numbers_link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.header_banner-text {
+  padding: 15px 40px;
+  position: absolute;
+  top: 25%;
+}
+
+.header_logo {
+width: 60%;
+}
+
+.header_logo--img {
+  width: 100%;
+}
+
+.header_text {
+  margin-top: 25px;
+}
+
+.header_description {
+  margin-top: 5px;
+  color: #cdb380;
+  border-bottom: solid #cdb380 1px;
+  cursor: pointer;
+}
+
+.section1_text--inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 80px;
+}
+
+.section1_title {
+  font-family: Oranienbaum;
+  font-size: 2rem;
+}
+
+.section1_description {
+  font-family: Roboto, sans-serif;
+  padding-top: 25px;
+  font-size: 1rem;
+}
+
+.section1_banner--img {
+  width: 100%;
+}
+
+.section1_text {
+  position: relative;
+}
+
+.section1_wrapper--ribbon {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.section1_ribbon {
+  left: -64px;
+  position: absolute;
+  top: 32px;
+  height: 30px;
+  width: 206px;
+  background-color: #fe0d3a;
+  color: white;
+  text-align: center;
+  transform: rotate(-45deg);
+  z-index: -1;
+  box-shadow: 0 10px 28px rgb(0 0 0 / 20%), 0 10px 10px rgb(0 0 0 / 15%);
+}    
+
+.section1_banner--description{
+  display: flex;
+  justify-content: center;
+  color: gray;
+  font-family: Roboto, sans-serif;
+  font-size: 0.8rem;}
+
+.section2 {
+  font-family: Roboto;
+  padding: 60px 180px;
+}
+
+.section2_title {
+  font-family: Oranienbaum;
+  font-size: 2rem;
+}
+
+.section2_description1 {
+  line-height: 3.5rem;
+}
+
+.section2_description2 {
+  padding: 20px 100px 0 100px;
+}
