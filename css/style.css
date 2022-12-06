@@ -10,9 +10,13 @@
 		url('./fonts/Roboto-Bold.ttf') format('ttf');
 }
 
+.page-container {
+  font-family: 'Roboto', sans-serif;
+}
+
 .header {
   font-family: Oranienbaum;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: white;
   position: relative;
 }
@@ -26,22 +30,18 @@
   justify-content: space-between;
   width: 100%;
   padding: 20px 40px;
-  position: absolute;
+  position: fixed;
   top: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(129 129 152 / 0%) 100%, rgba(255,255,255,0) 100%);
 }
 
-.header_menu > a, .icon_img, .number, .icons_link > a {
+.header_menu > a, .icon_img, .number, .icons_link > a, .footer_menu > a, .footer_item, a {
   text-decoration: none;
   color: white;
-  
 }
 
-.number:hover {
-  color: #cdb380;
-}
-
-.header_item:hover {
-  color: #cdb380;
+a:hover {
+  color: white;
 }
 
 .header_menu {
@@ -58,14 +58,17 @@
   justify-content: flex-end;
 }
 
-.icons_link {
+.icons_link--wrapper {
   display: flex;
   margin-left: 50%;
 }
 
+.icon_link {
+  margin-right: 5px;
+}
+
 .icon_img {
   width: 25px;
-  margin-left: 5px;
 }
 
 .numbers_link {
@@ -81,7 +84,7 @@
 }
 
 .header_logo {
-width: 60%;
+width: 65%;
 }
 
 .header_logo--img {
@@ -106,9 +109,11 @@ width: 60%;
   padding: 30px 80px;
 }
 
-.section1_title, .section4_title {
+.section1_title, .section4_title, .section5_title{
   font-family: 'Oranienbaum';
   font-size: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .section1_description {
@@ -187,8 +192,9 @@ width: 60%;
 }
 
 .col-sm-2 {
-  padding: 10px;
+  padding: 10px 0px;
   border: solid #fdbc00 1px;
+  font-size: 0.8rem;
 }
 
 .col-sm-6 {
@@ -231,6 +237,7 @@ width: 60%;
   display: flex;
   justify-content: space-evenly;
   font-family: 'Roboto', sans-serif;
+  margin-bottom: 50px;
 }
 
 .section4_bloсk--inner {
@@ -267,6 +274,175 @@ width: 60%;
   background-color: #ff0c3a;
   color: white;
   border-radius: 3px;
-  padding: 5px 40px;
+  padding: 7px 50px;
   margin: 10px;
+}
+
+.section5 {
+  margin: 0 25%;
+}
+
+.section5_title {
+  justify-content: flex-start;
+}
+
+.section5_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section5_gallery > div {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.section5_gallery > a {
+  width: 70%;
+}
+
+.section5_gallery--img, .footer_menu > a, .footer_menu > div {
+  width: 100%;
+}
+
+.section5_gallery--text {
+  margin: 0 15%;
+}
+
+.footer {
+  color: white;
+  background-color: black;
+  padding: 50px 20px;
+}
+
+.footer_menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer_button--wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.footer_button {
+  background-color: black;
+  border: solid #ffffff 1px;
+  padding: 3px 15px;
+  transition: 0.2s ease-in-out;
+}
+
+.footer_button:hover {
+  filter: contrast(0.8);
+}
+
+
+@media (max-width: 976px) {
+ html {
+  font-size: 12px;
+ }
+
+ .section2 {
+  padding: 60px 100px;
+ }
+
+ .section5 {
+  margin: 0px 15%;
+ }
+}
+
+@media (max-width: 768px) {
+  .header_menu {
+    width: 100%;
+    margin: 0 10%;
+  }
+
+  .header_link {
+    display: none;
+  }
+
+ .section2 {
+   padding: 50px 50px;
+ }
+
+ .header_text {
+   display: none;
+ }
+
+ .section4_bloсk--inner {
+  width: 30%;
+ }
+}
+
+@media (max-width: 600px) {
+  .section2_grid {
+    display: none;
+  }
+
+  .header_menu {
+    margin: 0;
+    font-size: 1.2rem;
+}
+}
+
+@media (max-width: 480px) {
+  .header__background {
+    width: 120%;
+    overflow: hidden;
+}
+
+  .header_menu {
+    flex-wrap: wrap;
+  }
+
+  .header_item {
+    margin-right: 5px;
+  }
+
+  .section2_description1 {
+    line-height: 2.5rem;
+  }
+
+  .section2_description2 {
+    padding: 20px 50px 0px 50px;
+  }
+
+  .section4_bloсk--inner {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+
+  .section4_bloсks {
+    flex-wrap: wrap;
+  }
+
+  .section4_title {
+    margin: 40px 0;
+  }
+
+  .section5_gallery--text {
+    margin: 0px 8%;
+  }
+
+  .section5 {
+    margin: 0px 8%;
+  }
+  
+  .header_logo {
+    width: 50%;
+  }
+  
+  .header_banner-text {
+    top: 35%;
+  }
+
+}
+
+@media (max-width: 320px) {
+  .header__background {
+    width: 140%;
+  }
+
 }
