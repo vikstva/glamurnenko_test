@@ -28,7 +28,7 @@
 .header_line {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 100vw;
   padding: 20px 40px;
   position: fixed;
   top: 0;
